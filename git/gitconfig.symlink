@@ -1,8 +1,5 @@
 # Sample gitconfig
 #
-
-[hub]
-        protocol = https
 [user]
         name = Zhiyi Sun
         email = zhiyisun@gmail.com
