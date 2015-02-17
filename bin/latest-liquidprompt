@@ -1,0 +1,7 @@
+#!/bin/sh -e
+if [ -d $HOME/liquidprompt ]; then
+	cd $HOME/liquidprompt
+	git pull
+else
+	git clone https://github.com/nojhan/liquidprompt.git $HOME/liquidprompt
+fi
