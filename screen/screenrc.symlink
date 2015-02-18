@@ -23,11 +23,10 @@ nonblock on
 deflog on
 logfile $HOME/workspace/screenlog/screenlog.%M-%d-%y_%c:%s.%n
 
+term "screen-256color"
+
 # minimal status line with clock flush right
 hardstatus alwayslastline "%{=b}%{G} : %{b}%w %=%{kG}%C%A"
-
-# copy screen clipboard to mac clipboard
-bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
 
 # enable bold
 attrcolor b ".I"
