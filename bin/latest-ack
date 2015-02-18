@@ -1,3 +1,3 @@
 #!/bin/sh -e
-curl http://betterthangrep.com/ack-standalone > ~/.dotfiles/bin/ack
-chmod +x ~/.dotfiles/bin/ack
+curl http://beyondgrep.com/ack-2.14-single-file > ~/.dotfiles/bin/ack
+chmod 0755 ~/.dotfiles/bin/ack 
