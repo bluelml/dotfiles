@@ -44,15 +44,16 @@ scpsend ()
 
 # WELCOME SCREEN
 #######################################################
-clear
-for i in `seq 1 15` ; do spin; done ;echo -ne "${WHITE} Great things take time. ${NC}"; for i in `seq 1 15` ; do spin; done ;echo "";
-echo -e "Kernel Information: " `uname -smr`;
-echo -e ${LIGHTBLUE}`bash --version`;echo ""
-echo -ne "Hello $USER today is "; date
-if [[ "`uname`" == "Linux" ]]; then
-    echo -e "${WHITE}"; cal ; echo "";
-    echo -ne "${CYAN}";netinfo;
+if [[ ! -n "$STY" ]]; then
+	clear
+	for i in `seq 1 15` ; do spin; done ;echo -ne "${WHITE} Great things take time. ${NC}"; for i in `seq 1 15` ; do spin; done ;echo "";
+	echo -e "Kernel Information: " `uname -smr`;
+	echo -e ${LIGHTBLUE}`bash --version`;echo ""
+	echo -ne "Hello $USER today is "; date
+	if [[ "`uname`" == "Linux" ]]; then
+	    echo -e "${WHITE}"; cal ; echo "";
+	    echo -ne "${CYAN}";netinfo;
+	fi
+	echo -ne "${NC}";screen -ls
+	echo -ne "${NC}Uptime for this computer is ";uptime | awk /'up/ {print $3,$4}';
 fi
-echo -ne "${NC}";screen -ls
-#;tmux ls
-echo -ne "${NC}Uptime for this computer is ";uptime | awk /'up/ {print $3,$4}'
