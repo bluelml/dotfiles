@@ -99,6 +99,3 @@ alias pumpitup="osascript -e 'set volume 7'"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
-# Build tag
-alias tag='. tag_rebuild.sh'

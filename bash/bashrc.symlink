@@ -234,7 +234,6 @@ ACK_PAGER_COLOR="$PAGER"
 alias du1='du -h --max-depth=1'
 alias fn='find . -name'
 alias hi='history | tail -20'
-alias tag='. tag_rebuild.sh'
 
 # ----------------------------------------------------------------------
 # BASH COMPLETION

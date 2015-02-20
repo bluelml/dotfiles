@@ -130,15 +130,15 @@ if uname == "Linux"
 endif
 
 "cscope
-set cscopetag
-if uname == "Linux"
-    cs add $MAINDIR/.tag/cscope.out
-endif
+"set cscopetag
+"if uname == "Linux"
+"    cs add $MAINDIR/.tag/cscope.out
+"endif
 
 "ctags
-if uname == "Linux"
-    set tags=$MAINDIR/.tag/tags
-endif
+"if uname == "Linux"
+"    set tags=$MAINDIR/.tag/tags
+"endif
 
 " ================ Custom Settings ========================
 so ~/.dotfiles/vim/settings.vim
