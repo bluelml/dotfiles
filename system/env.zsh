@@ -19,3 +19,8 @@ export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
+
+# Set Proxy if proxy.env is created on some machine.
+if [ -f $HOME/proxy.env ]; then
+	. $HOME/proxy.env
+fi
