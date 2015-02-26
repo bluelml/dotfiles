@@ -58,9 +58,6 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
-
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
