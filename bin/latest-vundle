@@ -6,4 +6,10 @@ else
 	mkdir -p $HOME/.vim/bundle
 	git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 fi
+
+# Create directory for tags.
+if [ ! -d $HOME/workspace/temp/.autotags ]; then
+	mkdir -p $HOME/workspace/temp/.autotags
+fi
+
 echo "Launch vim, run :BundleInstall"

@@ -24,3 +24,6 @@ export GREP_OPTIONS='--color=auto';
 if [ -f $HOME/proxy.env ]; then
 	. $HOME/proxy.env
 fi
+
+# Set terminal color
+export TERM=xterm-256color

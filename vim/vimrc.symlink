@@ -129,16 +129,5 @@ if uname == "Linux"
     set mouse=
 endif
 
-"cscope
-"set cscopetag
-"if uname == "Linux"
-"    cs add $MAINDIR/.tag/cscope.out
-"endif
-
-"ctags
-"if uname == "Linux"
-"    set tags=$MAINDIR/.tag/tags
-"endif
-
 " ================ Custom Settings ========================
 so ~/.dotfiles/vim/settings.vim
