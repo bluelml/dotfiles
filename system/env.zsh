@@ -22,9 +22,3 @@ export GREP_OPTIONS='--color=auto';
 
 # Set terminal color
 export TERM=xterm-256color
-
-# Set env if local.env is in $HOME.
-if [ -f $HOME/local.env ]; then
-	. $HOME/local.env
-fi
-

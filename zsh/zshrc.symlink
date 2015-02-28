@@ -31,6 +31,11 @@ done
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
+# Support bash complete function
+autoload -U +X bashcompinit
+bashcompinit
+autoload -U +X compdef
+
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -43,4 +48,7 @@ unset config_files
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
-
+# Set env if local.env is in $HOME.
+if [ -f $HOME/local.env  ]; then
+ . $HOME/local.env
+fi
