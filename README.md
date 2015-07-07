@@ -5,3 +5,5 @@ Install
 
 Run this:
 git clone git@github.com:zhiyisun/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+script/bootstrap
