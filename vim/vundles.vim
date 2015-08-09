@@ -88,7 +88,7 @@ let Grep_Skip_Files='*.bak *~ *.bin *.o'
 Plugin 'brookhong/cscope.vim'
 
 " taglist.vim
-Plugin 'taglist.vim'
+Plugin 'xetn/taglist.vim'
 
 " golang
 Plugin 'fatih/vim-go'
