@@ -145,6 +145,9 @@ let g:autotags_no_global = 1
 let g:autotags_cscope_file_extensions = ".cpp .cc .cxx .m .hpp .hh .h .hxx .c .idl .S .s"
 map <F5> :call AutotagsAdd()<CR>
 
+"Conque GDB
+Plugin 'Conque-GDB'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
