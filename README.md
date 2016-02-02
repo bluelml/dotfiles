@@ -4,6 +4,6 @@ This is a shameless ripoff of multiple dotfiles project listed in https://dotfil
 Install
 
 Run this:
-git clone git@github.com:zhiyisun/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+git clone git@github.com:zhiyisun/dotfiles.git ~/.dotfiles;
+cd ~/.dotfiles;
 script/bootstrap
