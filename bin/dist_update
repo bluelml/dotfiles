@@ -10,3 +10,7 @@ if [ -x /usr/bin/yum ]; then
 	sudo yum update -y
 	sudo yum upgrade -y
 fi
+
+if [ -x /usr/bin/rpi-update ]; then
+	sudo rpi-update
+fi
