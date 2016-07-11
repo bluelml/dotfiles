@@ -19,7 +19,8 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-TOKEN="o.Kx1e2XBnKS80mraj8PubpMIVwQLdtL5i"
 MSG="$1"
 
-curl -u $TOKEN: https://api.pushbullet.com/v2/pushes -d type=note -d title="Alert" -d body="$MSG"
+if [[ -n "$PUSH_BULLET_TOKEN"  ]]; then
+	curl -u $PUSH_BULLET_TOKEN: https://api.pushbullet.com/v2/pushes -d type=note -d title="Alert" -d body="$MSG"
+fi
