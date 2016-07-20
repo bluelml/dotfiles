@@ -1,9 +1,9 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: pushbullet.sh
+#          FILE: pushbullet
 # 
-#         USAGE: ./pushbullet.sh 
+#         USAGE: ./pushbullet
 # 
 #   DESCRIPTION: Send notification from Linux to my devices.
 # 
