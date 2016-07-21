@@ -98,6 +98,7 @@ Plugin 'hari-rangarajan/CCTree'
 
 " vim-plugins
 Plugin 'WolfgangMehner/vim-plugins'
+let g:C_LoadMenus = 'no'
 let g:C_CreateMenusDelayed = 'yes'
 
 " echofunc.vim
