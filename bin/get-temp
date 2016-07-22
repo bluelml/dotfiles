@@ -1,9 +1,9 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: get_temp.sh
+#          FILE: get-temp
 # 
-#         USAGE: ./get_temp.sh 
+#         USAGE: ./get-temp
 # 
 #   DESCRIPTION: 
 # 
@@ -20,7 +20,7 @@
 set -o nounset                              # Treat unset variables as an error
 
 cpu=$(</sys/class/thermal/thermal_zone0/temp)
-echo "CPU => $((cpu/1000))'C"
+awk 'BEGIN{printf "CPU => %.2f'"'"'C\n",('${cpu}'/ 1000)}'
 
 gpu=$(/opt/vc/bin/vcgencmd measure_temp | sed -e "s/temp=//g")
 if [ -x /opt/vc/bin/vcgencmd ]; then
