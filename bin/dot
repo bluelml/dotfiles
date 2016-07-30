@@ -5,3 +5,10 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 export ZSH=$HOME/.dotfiles
+
+cd $ZSH/bin/
+./latest-ack
+./latest-liquidprompt
+./latest-git-completion
+dist-update
+cd -
