@@ -10,5 +10,4 @@ cd $ZSH/bin/
 ./latest-ack
 ./latest-liquidprompt
 ./latest-git-completion
-dist-update
 cd -
