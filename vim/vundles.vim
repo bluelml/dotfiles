@@ -81,7 +81,7 @@ Plugin 'ervandew/supertab'
 Plugin 'yegappan/grep'
 " Map <F3>
 nnoremap <silent> <F3> :Rgrep<CR>
-let Grep_Default_Filelist='*.c *.cpp *.asm *.cc *.h *.hpp *.ind *.uc makefile* Makefile* *.y *.l *.hex *.txt *README* *.S *.cdl *.cxx *.s *.icl *.xcl *.py *.fpl *.fplh *.cnp *.go *.tcl'
+let Grep_Default_Filelist='*.c *.cpp *.asm *.cc *.h *.hpp *.ind *.uc makefile* Makefile* *.y *.l *.hex *.txt *README* *.S *.cdl *.cxx *.s *.icl *.xcl *.py *.fpl *.fplh *.cnp *.go *.tcl *.java'
 let Grep_Skip_Files='*.bak *~ *.bin *.o'
 
 " cscope.vim
