@@ -1,0 +1,46 @@
+#!/bin/bash - 
+#===============================================================================
+#
+#          FILE: update-hosts
+# 
+#         USAGE: ./update-hosts 
+# 
+#   DESCRIPTION: This script is used to update hosts from github.
+# 
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: Zhiyi Sun (zsun), zhiyisun@msn.com
+#  ORGANIZATION: 
+#       CREATED: 09/23/2016 02:55:26 PM
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+
+HOSTS=/etc/hosts
+HOSTS_ORIG=${HOSTS}.orig
+
+#Check and backup hosts file.
+if [ -f ${HOSTS_ORIG} ]
+then
+	sudo cp ${HOSTS_ORIG} ${HOSTS}
+else
+	if [ -f ${HOSTS} ]
+	then
+		sudo cp ${HOSTS} ${HOSTS_ORIG}
+	else
+		echo "[Error] Update Hosts: There is neither /etc/hosts nor /etc/hosts.orig!" 1>&2
+		exit 1
+	fi
+fi
+
+#Insert one line between original hosts content and following new content.
+echo "" | sudo tee -a ${HOSTS} > /dev/null
+
+#Download latest hosts file from github.
+curl https://raw.githubusercontent.com/racaljk/hosts/master/hosts | sudo tee -a ${HOSTS} > /dev/null
+
+#Done!
+echo "Update Hosts: ${HOSTS} has been updated. Have fun!"
