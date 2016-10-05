@@ -146,9 +146,13 @@ let g:autotagsdir = $HOME . "/workspace/temp/.autotags"
 let g:autotags_no_global = 1
 let g:autotags_cscope_file_extensions = ".cpp .cc .cxx .m .hpp .hh .h .hxx .c .idl .S .s"
 map <F5> :call AutotagsAdd()<CR>
+set nocscopetag
 
 "Conque GDB
 Plugin 'Conque-GDB'
+
+"gotags
+Plugin 'jstemmer/gotags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
