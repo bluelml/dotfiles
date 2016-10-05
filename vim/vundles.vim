@@ -37,7 +37,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'user/L9', {'name': 'newL9'}
 
 "cscope_maps.vim
-Plugin 'chazy/cscope_maps'
+Plugin 'zhiyisun/cscope_map.vim'
 
 " The NERD tree
 Plugin 'scrooloose/nerdtree'
