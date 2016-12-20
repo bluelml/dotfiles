@@ -48,7 +48,7 @@ if [[ ! -n "$STY" ]]; then
 	clear
 	for i in `seq 1 15` ; do spin; done ;echo -ne "${WHITE} Great things take time. ${NC}"; for i in `seq 1 15` ; do spin; done ;echo "";
 	echo -e "Kernel Information: " `uname -smr`;
-	echo -e ${LIGHTBLUE}`bash --version`;echo ""
+	echo -e ${LIGHTBLUE}`zsh --version`;echo ""
 	echo -ne "Hello $USER today is "; date
 	if [[ "`uname`" == "Linux" ]]; then
 	    echo -e "${WHITE}"; cal ; echo "";
