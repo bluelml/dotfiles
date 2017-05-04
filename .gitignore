@@ -1,1 +1,2 @@
 bash/.bash_completion.d/git-completion.bash
+bin/ack
