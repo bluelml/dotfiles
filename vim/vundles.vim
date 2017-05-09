@@ -74,9 +74,6 @@ nmap <F8> :TagbarToggle<CR>
 " EasyMotion
 Plugin 'Lokaltog/vim-easymotion'
 
-" SuperTab
-Plugin 'ervandew/supertab'
-
 " grep.vim
 Plugin 'yegappan/grep'
 " Map <F3>
@@ -152,6 +149,12 @@ Plugin 'Conque-GDB'
 
 "gotags
 Plugin 'jstemmer/gotags'"
+
+"youcompleteme
+Plugin 'valloric/youcompleteme'
+
+"indentline
+Plugin 'yggdroot/indentline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
