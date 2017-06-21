@@ -150,9 +150,6 @@ Plugin 'Conque-GDB'
 "gotags
 Plugin 'jstemmer/gotags'"
 
-"youcompleteme
-Plugin 'valloric/youcompleteme'
-
 "indentline
 Plugin 'yggdroot/indentline'
 
