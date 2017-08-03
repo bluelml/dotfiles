@@ -142,6 +142,7 @@ Plugin 'basilgor/vim-autotags'
 let g:autotagsdir = $HOME . "/workspace/temp/.autotags"
 let g:autotags_no_global = 1
 let g:autotags_cscope_file_extensions = ".cpp .cc .cxx .m .hpp .hh .h .hxx .c .idl .S .s"
+map <F6> :call AutotagsUpdate()<CR>
 map <F5> :call AutotagsAdd()<CR>
 
 "Conque GDB
