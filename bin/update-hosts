@@ -40,7 +40,7 @@ fi
 echo "" | sudo tee -a ${HOSTS} > /dev/null
 
 #Download latest hosts file from github.
-curl https://raw.githubusercontent.com/racaljk/hosts/master/hosts | sudo tee -a ${HOSTS} > /dev/null
+curl https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts | sudo tee -a ${HOSTS} > /dev/null
 
 #Done!
 echo "Update Hosts: ${HOSTS} has been updated. Have fun!"
