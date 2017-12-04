@@ -1,8 +1,8 @@
 # Sample gitconfig
 #
 [user]
-        name = Zhiyi Sun
-        email = zhiyisun@gmail.com
+        name = bluelml
+        email = bluelml@gmail.com
 [credential]
         helper = cache
 [alias]
